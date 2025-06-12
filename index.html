@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Dia dos Namorados ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c1e, #3a0ca3);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 10px rgba(255, 0, 255, 0.2);
+    }
+
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    .carousel {
+      display: flex;
+      animation: slide 25s linear infinite;
+      width: fit-content;
+    }
+
+    .carousel img {
+      width: 250px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: 20px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+      transition: transform 0.6s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slide {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .timeline {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 3rem 1rem;
+    }
+
+    .timeline h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-scroll {
+      display: inline-block;
+      animation: slideTimeline 15s linear infinite;
+    }
+
+    @keyframes slideTimeline {
+      from { transform: translateX(0); }
+      to { transform: translateX(-85%); }
+    }
+
+    .timeline-item {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 12px;
+      margin: 0 1rem;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .love-letter-section {
+      text-align: center;
+      margin: 4rem 1rem;
+      position: relative;
+    }
+
+    .envelope {
+      width: 200px;
+      height: 150px;
+      margin: 0 auto;
+      position: relative;
+      background: #bcc575;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+
+    .envelope .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: #c5d46c;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      z-index: 2;
+      transition: transform 0.5s ease;
+    }
+
+    .envelope.open .flap {
+      transform: rotateX(180deg);
+    }
+
+    .envelope .letter {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      color: white;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    .letter-content {
+      display: none;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 1.1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .letter-content h3 {
+      margin-bottom: 1rem;
+      color: #ffccff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header { font-size: 1.4rem; }
+      .carousel img { width: 180px; height: 260px; }
+    }
+
+    @media (max-width: 480px) {
+      header { font-size: 1.1rem; }
+      .carousel img { width: 140px; height: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    OI MINHA VIDA. FELIZ DIA DOS NAMORADOS! TE AMO ❤️
+  </header>
+  <div class="carousel-container">
+    <div class="carousel">
+      <!-- Coloque suas 23 fotos aqui -->
+      <!-- Exemplo com fotos de exemplo (substitua pelo caminho das suas fotos) -->
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto1.jpg" alt="Foto 1">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto2.jpg" alt="Foto 2">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto3.jpg" alt="Foto 3">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto4.jpg" alt="Foto 4">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto5.jpg" alt="Foto 5">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto6.jpg" alt="Foto 6">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto7.jpg" alt="Foto 7">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto8.jpg" alt="Foto 8">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto9.jpg" alt="Foto 9">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto10.jpg" alt="Foto 10">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto11.jpg" alt="Foto 11">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto12.jpg" alt="Foto 12">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto13.jpg" alt="Foto 13">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto14.jpg" alt="Foto 14">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto15.jpg" alt="Foto 15">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto16.jpg" alt="Foto 16">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto17.jpg" alt="Foto 17">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto18.jpg" alt="Foto 18">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto19.jpg" alt="Foto 19">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto20.jpg" alt="Foto 20">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto21.jpg" alt="Foto 21">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto22.jpg" alt="Foto 22">
+      <img src="C:\Users\nobru\OneDrive\Área de Trabalho\BRUNO\SQL para análise de dados - Material de apoio\PROJETINHO\FOTO\foto23.jpg" alt="Foto 23">
+    </div>
+  </div>
+
+  <section class="timeline">
+    <h2>🌟 Nossa Linha do Tempo 🌟</h2>
+    <div class="timeline-scroll">
+      <div class="timeline-item">Início: 02/01/2016</div>
+      <div class="timeline-item">1 ano: 02/01/2017</div>
+      <div class="timeline-item">2 anos: 02/01/2018</div>
+      <div class="timeline-item">3 anos: 02/01/2019</div>
+      <div class="timeline-item">4 anos: 02/01/2020</div>
+      <div class="timeline-item">5 anos: 02/01/2021</div>
+      <div class="timeline-item">6 anos: 02/01/2022</div>
+      <div class="timeline-item">7 anos: 02/01/2023</div>
+      <div class="timeline-item">8 anos: 02/01/2024</div>
+      <div class="timeline-item">9 anos: 02/01/2025</div>
+      <div class="timeline-item">EternoSempre ❤️</div>
+    </div>
+  </section>
+
+  <section class="love-letter-section">
+    <div class="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="letter">💌 Clique aqui</div>
+    </div>
+    <div class="letter-content" id="letterContent">
+      <h3>Para o amor da minha vida 💖</h3>
+      <p>
+        Oi meu amor, tudo bem? Espero que sim. Hoje estamos comemorando mais um dia dos namorados juntos e queria poder te lembrar de como eu te amo. <br><br>
+        Nossos dias veem sendo de pura adrenalina, ansiedade e cheio de pressão. Apenas nós dois sabemos dos altos e baixos que estamos passando mas, de uma coisa eu tenho certeza! <br><br>
+        Nenhum dia, nenhuma dificuldade, nenhuma alegria, nenhum sorriso seria equivalente ao estar passando por tudo ao seu lado.<br><br>
+        Sou uma pessoa dificil de lidar, concordo. Tenho minhas imperfeições. Tenho em mente que desbravar essa meu mundo, só você sabe.<br>
+        Por isso e por outro 1.000 motivos que não tenho coragem o suficiente em descordar com você, quero te agradecer por estar aqui, comigo! <br>
+        É desafiador! Mas, não consigo pensar em outra coisa a não ser que, estamos muito forte juntos! Serio! Quanta bagagem. Quanta história. Quanto amor!!<br>
+        E digo mais..<br><br>
+
+        Nossa casinha já esta ai, elevamos o nível de uma forma federalmente grande. Falo isso pelas longas conversas que nós tinhamos, nas longas noites que passamos em claro pelo celular devido à distância. <br><br>
+        E ali, só havia imaginações, grandes planos. Não sabiamos que teria tantos desafios mas, tambem não sabiamos o tamanho da alegria que nos esperava.<br><br>
+        
+        Que nosso amor para sempre viva! <br>
+        Que nossa vontade de compartilhar, nunca chegue ao fim. <br>
+        Que o nosso amor seja novidade a todo instante.<br>
+        Que o sol brilhe cada vez mais forte, para nossas noites de céu estrelado.<br>
+        Que sensação de estar na nossa casinha, seja indescritivel ao olho nu e só o coração se expresse.<br>
+        Que nossa intensidade continue.<br>
+        Porque sem você, muito coisa perde a graça (Tudo)<br><br>
+        
+        Obrigado por compartilhar seu amor comigo.<br>
+        Grato por ter você aqui do meu lado.<br><br>
+
+        Com muito amor,<br><br>
+
+        Ass: Seu chato favorito ❤️<br>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function openEnvelope() {
+      document.querySelector('.envelope').classList.add('open');
+      document.getElementById('letterContent').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
